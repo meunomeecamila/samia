@@ -1,0 +1,97 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #D6EAF8; /* Azul pastel */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .card:active {
+            transform: scale(1.1);
+            transition: transform 0.2s;
+        }
+        
+        .foto{
+            width: 200px;
+            border-radius: 5%;
+            box-shadow: #333;
+        }
+        .texto{
+            margin: 10px;
+            padding: 10px;
+        }
+        header {
+            background-color: #FDEBD0; /* Amarelo pastel */
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #FDEBD0;
+            padding: 10px;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #deadda;
+        }
+        .container {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .album {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .album img {
+            width: 100px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            border-radius: 10px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .card {
+            background-color: #FDEBD0;
+            padding: 15px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #FDEBD0;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+            .album {
+                flex-direction: column;
+                align-items: center;
+            }
+            .album img {
+                width: 80%;
+            }
+        }
